@@ -24,7 +24,7 @@ _get_repolink () {
     local regex
     local rlink
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "jepthoniq" ]]
+    if [[ $UPSTREAM_REPO == "stork" ]]
     then
         rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL200YTZsN2Evc3RvcmsuZ2l0==" | base64 -d`
     elif [[ $UPSTREAM_REPO =~ $regex ]]
